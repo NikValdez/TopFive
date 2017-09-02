@@ -16,6 +16,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass', '~> 0.96.1'
+gem 'devise', '~> 4.2'
 
 
 group :development, :test do
