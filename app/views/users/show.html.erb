@@ -1,0 +1,4 @@
+<h1> Welcome <%= full_name %></h1>
+<% @user_posts.each do |post| %>
+	<ol><%= link_to post.title, post_path(post) %></ol>
+<% end %>

@@ -21,6 +21,11 @@ gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.6'
+  gem "capybara"
+  gem 'guard-rspec', require: false
+
+
 end
 
 group :development do

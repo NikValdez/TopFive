@@ -14,9 +14,18 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo">TopFive</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
+        <li> <% if user_signed_in? %>
+        <li>
+        <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+        </li>
+      <% else %>
+        <li>
+        <%= link_to('Login', new_user_session_path)  %>  
+        </li>
+      <% end %>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -32,10 +41,10 @@
         <br><br>
         <h1 class="header center teal-text text-lighten-2">Top Five</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Get all your favorite thought leaders content in one place</h5>
+          <h5 class="header col s12 light">Get all the content from your favorite thought leaders in one place</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="/posts" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div>
         <br><br>
 
