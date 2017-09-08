@@ -57,6 +57,21 @@
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
 
+  <div class="field">
+      <%= f.label :twitter %><br />
+      <%= f.text_field :twitter, autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :facebook %><br />
+      <%= f.text_field :facebook, autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :instagram %><br />
+      <%= f.text_field :instagram, autofocus: true %>
+    </div>
+
   <div class="actions">
     <%= f.submit "Update" %>
   </div>

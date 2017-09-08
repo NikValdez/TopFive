@@ -43,8 +43,14 @@
         <div class="row center">
           <h5 class="header col s12 light">Get all the content from your favorite thought leaders in one place</h5>
         </div>
+
         <div class="row center">
-          <a href="/posts" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        <%- if user_signed_in? %>
+            <a href="/users/<%= current_user.id %>" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">My Profile</a>
+        <% else %>
+            <a href="/users/sign_up" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Sign Up!</a>
+        <% end %>
+
         </div>
         <br><br>
 

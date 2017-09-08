@@ -17,12 +17,13 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass', '~> 0.96.1'
 gem 'devise', '~> 4.2'
-
+gem 'twitter', '~> 6.1'
 
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.6'
   gem "capybara"
+  gem 'factory_girl'
   gem 'guard-rspec', require: false
 
 
