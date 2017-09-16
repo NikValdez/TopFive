@@ -20,6 +20,7 @@ gem 'devise', '~> 4.2'
 gem 'twitter', '~> 6.1'
 
 
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.6'

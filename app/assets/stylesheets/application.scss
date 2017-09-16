@@ -1,5 +1,6 @@
- @import "materialize";
- @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "materialize";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
 
 #logo-container {
 	color: #26a69a;
@@ -40,4 +41,31 @@ img  {
 span {
   font-size: 24px;
 }
+
+.slideInLeft {
+  color: #4db6ac;
+  text-align: center;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+}
+
+.slideInRight {
+  font-weight: 300;
+  width: 100%;
+  float: left;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  
+}
+  
+.rubberBand {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+
+  }
+
+
+
+
+    
 
