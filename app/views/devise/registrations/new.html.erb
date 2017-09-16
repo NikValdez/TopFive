@@ -1,6 +1,8 @@
 <div class="container">
   <h2>Sign up</h2>
 
+  <p class="instructions">Be sure to type the correct names of the content creators you wish to follow from the respective platforms. For each platform a creator may have a different user name for instance Tim Ferriss on Facebook and Instagram is <u>timferriss</u> however on Twitter he is <u>tferriss</u>. Also be sure that no spaces are in the name as this will make the app fail.</p>
+
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
 
@@ -14,7 +16,7 @@
       <%= f.text_field :last_name, autofocus: true %>
     </div>
 
-    <div class="field">
+   <!--  <div class="field">
       <%= f.label :user_name %><br />
       <%= f.text_field :user_name, autofocus: true %>
     </div>
@@ -22,7 +24,7 @@
   <div class="field">
       <%= f.label :birthday %><br />
       <%= f.date_field :birthday, autofocus: true %>
-    </div>
+    </div> -->
 
 
 
@@ -43,26 +45,86 @@
       <%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation, autocomplete: "off" %>
     </div>
+    <div class="row">
+      <div class="col s4">
+        <div class="field">
+          <%= f.label :twitter %><br />
+          <%= f.text_field :twitter, autofocus: true %>
+        </div>
+      </div>
+    
 
-    <div class="field">
-      <%= f.label :twitter %><br />
-      <%= f.text_field :twitter, autofocus: true %>
+    <div class="col s4">
+      <div class="field">
+        <%= f.label :twitter2 %><br />
+        <%= f.text_field :twitter2, autofocus: true %>
+      </div>
     </div>
 
-    <div class="field">
-      <%= f.label :facebook %><br />
-      <%= f.text_field :facebook, autofocus: true %>
+    <div class="col s4">
+      <div class="field">
+        <%= f.label :twitter3 %><br />
+        <%= f.text_field :twitter2, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+ <div class="row">
+    <div class="col s4">
+      <div class="field">
+        <%= f.label :facebook %><br />
+        <%= f.text_field :facebook, autofocus: true %>
+      </div>
     </div>
 
+
+  <div class="col s4">
     <div class="field">
-      <%= f.label :instagram %><br />
-      <%= f.text_field :instagram, autofocus: true %>
+      <%= f.label :facebook2 %><br />
+      <%= f.text_field :facebook2, autofocus: true %>
+    </div>
+  </div>
+
+  <div class="col s4">
+    <div class="field">
+      <%= f.label :facebook3 %><br />
+      <%= f.text_field :facebook3, autofocus: true %>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+    <div class="col s4">
+      <div class="field">
+        <%= f.label :instagram %><br />
+        <%= f.text_field :instagram, autofocus: true %>
+      </div>
     </div>
 
-    <div class="actions">
-      <%= f.submit "Sign up" %>
+
+  <div class="col s4">
+    <div class="field">
+      <%= f.label :instagram2 %><br />
+      <%= f.text_field :instagram2, autofocus: true %>
+    </div>
+  </div>
+
+  <div class="col s4">
+    <div class="field">
+      <%= f.label :instagram3 %><br />
+      <%= f.text_field :instagram3, autofocus: true %>
+    </div>
+  </div>
+</div>
+
+
+    <div class="btn waves-effect waves-light">Sign in
+      <%= f.submit "Sign in", :class => 'sign_in' %>
     </div>
   <% end %>
 </div>
 
+
 <%= render "devise/shared/links" %>
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TopFive</title>
+    <title>Top 3</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,8 +9,9 @@
   </head>
 
   <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <% flash.each do |message_type, message| %>
+    <%= javascript_tag "Materialize.toast('#{message}', 4000)" %>
+<% end %>
     <%= yield %>
   </body>
 </html>

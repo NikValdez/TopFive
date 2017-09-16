@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 feature "visting the homepage" do 
-	scenario "the vistor sees the Top Five text" do 
+	scenario "the vistor sees the Top Three text" do 
 		visit root_path
-		expect(page).to have_text("Top Five")
+		expect(page).to have_text("Top Three")
 	end
 
 end
@@ -14,6 +14,29 @@ feature "user is not logged in on hompage" do
 		expect(page).to have_text('Sign Up')
 	end
 end
+ 
+# feature "User log in" do 
+
+# 	let(:hacker) {FactoryGirl.create(:hacker)}
+
+# 	def fill_in_signin_fields
+# 		fill_in "hacker[email]", with: hacker.email
+# 		fill_in "hacker[password]", with: hacker.password
+# 		# click_link "Log in"
+# 	end
+
+	
+# 	scenario "visit site to sign in" do 
+# 		visit "/users/sign_in"
+# 		fill_in_signin_fields
+# 		click_button "Log in"
+# 		expect(current_path).to eq user_path(User.last)
+# 		# expect(page).to have_content("Welcome")
+# 	end
+
+	
+
+#  end 
 
 
 # feature "User logs in and logs out" do

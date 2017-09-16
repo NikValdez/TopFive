@@ -1,9 +1,10 @@
+<div class="container">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
+<!--   <div class="field">
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name, autofocus: true %>
   </div>
@@ -28,12 +29,12 @@
     <%= f.text_area :about, autofocus: true %>
   </div>
 
-
-  <div class="field">
+ -->
+<!--   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
-  </div>
-
+  </div> -->
+<!-- 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
@@ -50,35 +51,95 @@
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+  </div> -->
 
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
 
-  <div class="field">
-      <%= f.label :twitter %><br />
-      <%= f.text_field :twitter, autofocus: true %>
+  <div class="row">
+      <div class="col s4">
+        <div class="field">
+          <%= f.label :twitter %><br />
+          <%= f.text_field :twitter, autofocus: true %>
+        </div>
+      </div>
+    
+
+    <div class="col s4">
+      <div class="field">
+        <%= f.label :twitter2 %><br />
+        <%= f.text_field :twitter2, autofocus: true %>
+      </div>
     </div>
 
-    <div class="field">
-      <%= f.label :facebook %><br />
-      <%= f.text_field :facebook, autofocus: true %>
+    <div class="col s4">
+      <div class="field">
+        <%= f.label :twitter3 %><br />
+        <%= f.text_field :twitter2, autofocus: true %>
+      </div>
+    </div>
+  </div>
+
+ <div class="row">
+    <div class="col s4">
+      <div class="field">
+        <%= f.label :facebook %><br />
+        <%= f.text_field :facebook, autofocus: true %>
+      </div>
     </div>
 
+
+  <div class="col s4">
     <div class="field">
-      <%= f.label :instagram %><br />
-      <%= f.text_field :instagram, autofocus: true %>
+      <%= f.label :facebook2 %><br />
+      <%= f.text_field :facebook2, autofocus: true %>
     </div>
+  </div>
+
+  <div class="col s4">
+    <div class="field">
+      <%= f.label :facebook3 %><br />
+      <%= f.text_field :facebook3, autofocus: true %>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+    <div class="col s4">
+      <div class="field">
+        <%= f.label :instagram %><br />
+        <%= f.text_field :instagram, autofocus: true %>
+      </div>
+    </div>
+
+
+  <div class="col s4">
+    <div class="field">
+      <%= f.label :instagram2 %><br />
+      <%= f.text_field :instagram2, autofocus: true %>
+    </div>
+  </div>
+
+  <div class="col s4">
+    <div class="field">
+      <%= f.label :instagram3 %><br />
+      <%= f.text_field :instagram3, autofocus: true %>
+    </div>
+  </div>
+</div>
+
 
   <div class="actions">
     <%= f.submit "Update" %>
   </div>
 <% end %>
 
-<h3>Cancel my account</h3>
+<h5>Cancel my account</h5>
 
 <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+</div>
 
 <%= link_to "Back", :back %>
