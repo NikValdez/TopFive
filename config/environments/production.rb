@@ -29,7 +29,7 @@ Rails.application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
-
+  config.secret_key = '44b02b4f37ff9007f42dab3f0d32979b49ee1158c2f6562e8dc3b6dcd61862d01cb6e69d685acdb067a42c69cf0552d6cd8823926c3648219b9be5cab22ca3d2'
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX

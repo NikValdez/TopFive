@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Top 5(Top 3) allows users the ability to import their favorite 5(3) social media content creators from the major social platforms onto a single page. This allows them the ability to view all their most important content in a single location. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# LISCENCE 
+Top 5 is open-source software, freely distributable under the terms of an MIT-style license. Do what you like with it.
